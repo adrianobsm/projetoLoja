@@ -18,7 +18,7 @@ class BuscaLojasTableViewController: UITableViewController, UISearchBarDelegate 
         super.viewDidLoad()
         
         //REMOVER!!!!!!
-        controller.selectDasOutrasTelas()
+        //controller.selectDasOutrasTelas()
         
         self.tableView.reloadData()
         searchBar.delegate = self
