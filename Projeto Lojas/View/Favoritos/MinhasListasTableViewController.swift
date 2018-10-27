@@ -8,10 +8,21 @@
 
 import UIKit
 
-class MinhasListasTableViewController: UITableViewController {
-
-
+class MinhasListasTableViewController: UITableViewController, UITabBarDelegate, MinhasListasDelegate {
+    
+    func celulaSelecionada(nome: String?) {
+        guard let nome = nome else {
+            return
+        }
+        self.nomeCelula = nome
+        print("meu segundo teste \(self.nomeCelula)")
+    }
+    
+    
+    
+    
     let controller = MinhasListasController()
+    var nomeCelula: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,6 +47,7 @@ class MinhasListasTableViewController: UITableViewController {
         } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "minhasListasCellIdentifier", for: indexPath)
             if let cellLoja = cell as? MinhasListasTableViewCell {
+                cellLoja.delegate = self
                 cellLoja.nomeLista.text = controller.nomeFavorito(indexPath.row)
                 cellLoja.qtdDeLojas.text = controller.quantidadeLojasFavoritasLista(indexPath.row)
                 
@@ -52,5 +64,12 @@ class MinhasListasTableViewController: UITableViewController {
             return 120
         }
     }
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        print("meu terceiro teste \(self.nomeCelula)")
+        if segue.identifier == "ListaViewControllerSegue", let viewControllerB = segue.destination as? FavoritoDetalheViewController{
+            print(nomeCelula ?? "teste")
+            viewControllerB.texto = nomeCelula
+        }
+    }
+    
 }

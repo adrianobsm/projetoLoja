@@ -16,10 +16,6 @@ class BuscaLojasTableViewController: UITableViewController, UISearchBarDelegate 
     // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        //REMOVER!!!!!!
-        //controller.selectDasOutrasTelas()
-        
         self.tableView.reloadData()
         searchBar.delegate = self
     }
@@ -42,7 +38,7 @@ class BuscaLojasTableViewController: UITableViewController, UISearchBarDelegate 
             cellLoja.logoLoja.image = UIImage(named: controller.nomeLogoLoja(indexPath.row))
             let nomeImagemFavorita = controller.isLojaFavorita(indexPath.row) ? "liked" : "like"
             let imagemLike = UIImage(named: nomeImagemFavorita)
-            let imagemBotao = UIImageView(image: imagemLike)
+            print(nomeImagemFavorita)
             cellLoja.likeButton.imageView?.image = imagemLike
             
             cellLoja.vendeJogos.image = controller.vendeJogos(indexPath.row) ? UIImage(named: "video-game") : nil
