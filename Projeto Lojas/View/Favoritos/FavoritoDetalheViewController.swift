@@ -17,7 +17,7 @@ class FavoritoDetalheViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("meu quarto teste \(texto!)")
+        //print("meu quarto teste \(texto!)")
         labelNome.text = texto! //Fones"//
         controller.buscarLojas(comNome: texto!)
         self.tableView.reloadData()
@@ -36,7 +36,7 @@ class FavoritoDetalheViewController: UITableViewController {
             let nomeImagemFavorita = controller.isLojaFavorita(indexPath.row) ? "liked" : "like"
             let imagemLike = UIImage(named: nomeImagemFavorita)
             //let imagemBotao = UIImageView(image: imagemLike)
-            cellLoja.likeButton.imageView?.image = imagemLike
+            cellLoja.likeButton.setImage(imagemLike, for: .normal) 
 
             cellLoja.vendeJogos.image = controller.vendeJogos(indexPath.row) ? UIImage(named: "video-game") : nil
             cellLoja.vendeComputador.image = controller.vendeComputadores(indexPath.row) ? UIImage(named: "pc") : nil

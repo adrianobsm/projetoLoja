@@ -15,7 +15,12 @@ class MinhasListasTableViewController: UITableViewController, UITabBarDelegate, 
             return
         }
         self.nomeCelula = nome
-        print("meu segundo teste \(self.nomeCelula)")
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        if let detalheFavoritoVC = storyboard.instantiateViewController(withIdentifier: "ListaLojasIDVC") as? FavoritoDetalheViewController{
+            detalheFavoritoVC.texto = nome
+            self.navigationController?.pushViewController(detalheFavoritoVC, animated: true)
+        }
     }
     
     
@@ -64,12 +69,13 @@ class MinhasListasTableViewController: UITableViewController, UITabBarDelegate, 
             return 120
         }
     }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        print("meu terceiro teste \(self.nomeCelula)")
-        if segue.identifier == "ListaViewControllerSegue", let viewControllerB = segue.destination as? FavoritoDetalheViewController{
-            print(nomeCelula ?? "teste")
-            viewControllerB.texto = nomeCelula
-        }
-    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        //print(indexPath.row)
+//        print("meu terceiro teste \(self.nomeCelula)")
+//        if segue.identifier == "ListaViewControllerSegue", let viewControllerB = segue.destination as? FavoritoDetalheViewController{
+//            print(nomeCelula ?? "teste")
+//            viewControllerB.texto = nomeCelula
+//        }
+//    }
     
 }

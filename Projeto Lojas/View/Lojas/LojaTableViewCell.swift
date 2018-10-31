@@ -8,6 +8,11 @@
 
 import UIKit
 
+internal protocol MinhasLojasDelegate : AnyObject {
+    
+    func celSelecionada(nome: String?)
+}
+
 class LojaTableViewCell: UITableViewCell {
 
     @IBOutlet weak var logoLoja: UIImageView!
@@ -20,12 +25,20 @@ class LojaTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
+    
+    var nmLoja: String!
+    var delegate: MinhasLojasDelegate?
 
     @IBAction func lojaFavoritada(_ sender: Any) {
         let novaImagem = likeButton.currentImage == UIImage(named: "like") ? UIImage(named: "liked") : UIImage(named: "like")
         likeButton.setImage(novaImagem, for: .normal)
     }
     
+    @IBAction func detalharLojaButton(_ sender: Any) {
+        nmLoja = nomeLoja.text!
+        print("passou primeira vez \(nmLoja!)")
+        delegate?.celSelecionada(nome: nmLoja)
+    }
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 

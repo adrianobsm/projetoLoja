@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		841C59BE218915A700D9816C /* ListaProdutosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841C59BD218915A700D9816C /* ListaProdutosTableViewCell.swift */; };
+		841C59C02189161300D9816C /* ListaProdutosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841C59BF2189161300D9816C /* ListaProdutosController.swift */; };
+		841C59C2218933E700D9816C /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841C59C1218933E700D9816C /* LoginController.swift */; };
+		841C59C421894D0200D9816C /* PerfilController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841C59C321894D0200D9816C /* PerfilController.swift */; };
+		841C59C62189508900D9816C /* CadastroController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841C59C52189508900D9816C /* CadastroController.swift */; };
+		84325B3D2188EFAB00D22E7F /* DetalheLojaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84325B3C2188EFAB00D22E7F /* DetalheLojaTableViewController.swift */; };
 		8434EFF321836358002A21C6 /* ListaFavoritosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8434EFF221836358002A21C6 /* ListaFavoritosController.swift */; };
 		844A7714217EA563003B1138 /* MinhasListasTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844A7713217EA563003B1138 /* MinhasListasTableViewController.swift */; };
 		844A7716217EAB80003B1138 /* MinhasListasTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844A7715217EAB80003B1138 /* MinhasListasTableViewCell.swift */; };
@@ -26,7 +32,6 @@
 		F5463C42214B2567000B4B90 /* BuscaLojasTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5463C41214B2567000B4B90 /* BuscaLojasTableViewController.swift */; };
 		F5B8BFD0215D833F00A2708C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B8BFCF215D833F00A2708C /* LoginViewController.swift */; };
 		F5B8BFD2215D836700A2708C /* PerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B8BFD1215D836700A2708C /* PerfilViewController.swift */; };
-		F5B8BFD4215D83B600A2708C /* DetalheLojaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B8BFD3215D83B600A2708C /* DetalheLojaViewController.swift */; };
 		F5B8BFD8215D843D00A2708C /* FavoritoDetalheViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B8BFD7215D843D00A2708C /* FavoritoDetalheViewController.swift */; };
 		F5B8BFDA215D9CC200A2708C /* Loja.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B8BFD9215D9CC200A2708C /* Loja.swift */; };
 		F5F816AF21545B9C0083FDA2 /* BuscaLojasController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F816AE21545B9C0083FDA2 /* BuscaLojasController.swift */; };
@@ -36,6 +41,12 @@
 /* Begin PBXFileReference section */
 		74CB775928536D8C1755555D /* Pods-Projeto Lojas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Projeto Lojas.release.xcconfig"; path = "Pods/Target Support Files/Pods-Projeto Lojas/Pods-Projeto Lojas.release.xcconfig"; sourceTree = "<group>"; };
 		7603CD92110C928BC5E95B3E /* Pods-Projeto Lojas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Projeto Lojas.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Projeto Lojas/Pods-Projeto Lojas.debug.xcconfig"; sourceTree = "<group>"; };
+		841C59BD218915A700D9816C /* ListaProdutosTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaProdutosTableViewCell.swift; sourceTree = "<group>"; };
+		841C59BF2189161300D9816C /* ListaProdutosController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaProdutosController.swift; sourceTree = "<group>"; };
+		841C59C1218933E700D9816C /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		841C59C321894D0200D9816C /* PerfilController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilController.swift; sourceTree = "<group>"; };
+		841C59C52189508900D9816C /* CadastroController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroController.swift; sourceTree = "<group>"; };
+		84325B3C2188EFAB00D22E7F /* DetalheLojaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalheLojaTableViewController.swift; sourceTree = "<group>"; };
 		8434EFF221836358002A21C6 /* ListaFavoritosController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaFavoritosController.swift; sourceTree = "<group>"; };
 		844A7713217EA563003B1138 /* MinhasListasTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinhasListasTableViewController.swift; sourceTree = "<group>"; };
 		844A7715217EAB80003B1138 /* MinhasListasTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinhasListasTableViewCell.swift; sourceTree = "<group>"; };
@@ -58,7 +69,6 @@
 		F5463C41214B2567000B4B90 /* BuscaLojasTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuscaLojasTableViewController.swift; sourceTree = "<group>"; };
 		F5B8BFCF215D833F00A2708C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F5B8BFD1215D836700A2708C /* PerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilViewController.swift; sourceTree = "<group>"; };
-		F5B8BFD3215D83B600A2708C /* DetalheLojaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalheLojaViewController.swift; sourceTree = "<group>"; };
 		F5B8BFD7215D843D00A2708C /* FavoritoDetalheViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritoDetalheViewController.swift; sourceTree = "<group>"; };
 		F5B8BFD9215D9CC200A2708C /* Loja.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loja.swift; sourceTree = "<group>"; };
 		F5F816AE21545B9C0083FDA2 /* BuscaLojasController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuscaLojasController.swift; sourceTree = "<group>"; };
@@ -150,9 +160,10 @@
 		F5B8BFC5215D7FB500A2708C /* Lojas */ = {
 			isa = PBXGroup;
 			children = (
-				F5B8BFD3215D83B600A2708C /* DetalheLojaViewController.swift */,
+				84325B3C2188EFAB00D22E7F /* DetalheLojaTableViewController.swift */,
 				F5463C3F214B2328000B4B90 /* LojaTableViewCell.swift */,
 				F5463C41214B2567000B4B90 /* BuscaLojasTableViewController.swift */,
+				841C59BD218915A700D9816C /* ListaProdutosTableViewCell.swift */,
 			);
 			path = Lojas;
 			sourceTree = "<group>";
@@ -203,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				F5F816AE21545B9C0083FDA2 /* BuscaLojasController.swift */,
+				841C59BF2189161300D9816C /* ListaProdutosController.swift */,
 			);
 			path = Lojas;
 			sourceTree = "<group>";
@@ -210,6 +222,9 @@
 		F5B8BFCB215D812500A2708C /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				841C59C1218933E700D9816C /* LoginController.swift */,
+				841C59C321894D0200D9816C /* PerfilController.swift */,
+				841C59C52189508900D9816C /* CadastroController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -335,20 +350,25 @@
 			files = (
 				F5B8BFD0215D833F00A2708C /* LoginViewController.swift in Sources */,
 				F5F816AF21545B9C0083FDA2 /* BuscaLojasController.swift in Sources */,
+				841C59BE218915A700D9816C /* ListaProdutosTableViewCell.swift in Sources */,
 				84FAD28C21839C9800DD7A16 /* LojasFavoritasTableViewCell.swift in Sources */,
 				F5338D032165A9E8001C2512 /* Usuario.swift in Sources */,
 				F5B8BFDA215D9CC200A2708C /* Loja.swift in Sources */,
 				F50B80B12141EF5D006FCEE4 /* CadastroTableViewController.swift in Sources */,
 				8434EFF321836358002A21C6 /* ListaFavoritosController.swift in Sources */,
+				841C59C62189508900D9816C /* CadastroController.swift in Sources */,
 				F50B809F2141E1DD006FCEE4 /* AppDelegate.swift in Sources */,
 				F5463C42214B2567000B4B90 /* BuscaLojasTableViewController.swift in Sources */,
 				844A7714217EA563003B1138 /* MinhasListasTableViewController.swift in Sources */,
+				841C59C2218933E700D9816C /* LoginController.swift in Sources */,
 				F5338CFB2165A558001C2512 /* Database.swift in Sources */,
+				84325B3D2188EFAB00D22E7F /* DetalheLojaTableViewController.swift in Sources */,
 				F5B8BFD2215D836700A2708C /* PerfilViewController.swift in Sources */,
+				841C59C02189161300D9816C /* ListaProdutosController.swift in Sources */,
+				841C59C421894D0200D9816C /* PerfilController.swift in Sources */,
 				F5B8BFD8215D843D00A2708C /* FavoritoDetalheViewController.swift in Sources */,
 				844A7716217EAB80003B1138 /* MinhasListasTableViewCell.swift in Sources */,
 				F5338CFF2165A952001C2512 /* Produto.swift in Sources */,
-				F5B8BFD4215D83B600A2708C /* DetalheLojaViewController.swift in Sources */,
 				844A7718217EAEEB003B1138 /* MinhasListasController.swift in Sources */,
 				F5463C40214B2328000B4B90 /* LojaTableViewCell.swift in Sources */,
 				F5338D052165AA08001C2512 /* Favorito.swift in Sources */,

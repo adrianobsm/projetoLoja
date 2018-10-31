@@ -56,8 +56,23 @@ class BuscaLojasController {
             if filtro == "" {
                 return try Realm().objects(Loja.self)[index].iconePequeno
             }
-            let lojaEspecifica = try Realm().objects(Loja.self).filter(filtro)[index]
-            return lojaEspecifica.iconePequeno
+            let lojaEspecifica = try Realm().objects(Loja.self).filter(filtro)
+            //print(lojaEspecifica[0].iconePequeno)
+            return lojaEspecifica[index].iconePequeno
+        } catch {
+            return "exit"
+        }
+    }
+    
+    func nomeLogoLojaGrande(_ index: Int) -> String {
+        do {
+            if filtro == "" {
+                return try Realm().objects(Loja.self)[index].iconePequeno
+            }
+            let lojaEspecifica = try Realm().objects(Loja.self).filter(filtro)
+            //print(lojaEspecifica[0].iconePequeno)
+            return lojaEspecifica[index].iconeGrande
+            
         } catch {
             return "exit"
         }
@@ -70,6 +85,15 @@ class BuscaLojasController {
             }
             let lojaEspecifica = try Realm().objects(Loja.self).filter(filtro)[index]
             return lojaEspecifica.favorita
+        } catch {
+            return false
+        }
+    }
+    
+    func isFavorita(_ index: String) -> Bool {
+        do {
+            let lojaEspecifica = try Realm().objects(Loja.self).filter(index)
+            return lojaEspecifica[0].favorita
         } catch {
             return false
         }
