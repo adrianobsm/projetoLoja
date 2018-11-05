@@ -24,7 +24,7 @@ class MinhasListasTableViewCell: UITableViewCell {
     
     @IBAction func proximaTela(_ sender: Any) {
         nomeLoja = nomeLista.text!
-        print("passou primeira vez \(nomeLoja)")
+        //print("passou primeira vez \(nomeLoja)")
         delegate?.celulaSelecionada(nome: nomeLoja)
     }
     override func setSelected(_ selected: Bool, animated: Bool) {

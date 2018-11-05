@@ -23,17 +23,23 @@ class CadastroTableViewController: UITableViewController {
     @IBOutlet weak var txtSenha: UITextField!
     @IBAction func cadastrarUsuario(_ sender: Any) {
         var idadeFinal: Int!
+        var emailFinal: String = txtEmail.text!
         if txtIdade.text == "" {
             idadeFinal = 0
         }else{
-            idadeFinal = 12//Int(txtIdade.text)
+            idadeFinal = Int(txtIdade.text!)
         }
         if controller.cadastrarUsuario(txtNome.text!, "user-logo", txtEmail.text!, txtSenha.text!, txtTelefone.text!, idadeFinal){
+            
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            if let detalheFavoritoVC = storyboard.instantiateViewController(withIdentifier: "perfilView") as? PerfilViewController{
-                detalheFavoritoVC.email = txtEmail.text
-                self.navigationController?.pushViewController(detalheFavoritoVC, animated: true)
-            }
+            let detalhePerfilVC = storyboard.instantiateViewController(withIdentifier: "perfilView") as! PerfilViewController
+            detalhePerfilVC.email = emailFinal
+            txtNome.text = ""
+            txtEmail.text = ""
+            txtSenha.text = ""
+            txtTelefone.text=""
+            txtIdade.text = ""
+            self.navigationController?.popToViewController(detalhePerfilVC, animated: true)
         }else{
             let alert = UIAlertController(title: "Erro de Cadastro", message: "Favor informar novamente", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
