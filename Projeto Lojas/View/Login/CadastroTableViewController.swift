@@ -39,7 +39,7 @@ class CadastroTableViewController: UITableViewController {
             txtSenha.text = ""
             txtTelefone.text=""
             txtIdade.text = ""
-            self.navigationController?.popToViewController(detalhePerfilVC, animated: true)
+            self.navigationController?.pushViewController(detalhePerfilVC, animated: true)
         }else{
             let alert = UIAlertController(title: "Erro de Cadastro", message: "Favor informar novamente", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
